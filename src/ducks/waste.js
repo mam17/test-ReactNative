@@ -49,7 +49,7 @@ export const Creators = {
     await new Promise((resolve) => {
       setTimeout(() => {
         const wastesByDate = wastesMock?.sort((currentWaste, nextWaste) =>
-          currentWaste?.date > nextWaste ? -1 : 1
+          currentWaste?.date > nextWaste?.date ? -1 : 1
         );
         dispatch(Creators.setWastes(wastesByDate));
         dispatch(Creators.setIsLoading(false));
@@ -62,9 +62,7 @@ export const Creators = {
 
     await new Promise((resolve) => {
       setTimeout(() => {
-        const mockedWaste = {
-          ...wastesMock.find((waste) => waste?.id === id)
-        };
+        const mockedWaste = wastesMock.find((waste) => waste?.id === id);
 
         dispatch(Creators.setWaste(mockedWaste));
         dispatch(Creators.setIsLoading(false));
