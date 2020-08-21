@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import reactotron from 'reactotron-react-native';
 import WasteComponent from '../components/WasteComponent';
 import { useStateValue } from '../../state';
 import { Creators as WasteCreators } from '../../ducks/waste';
@@ -19,22 +18,24 @@ const WasteContainer = ({ navigation, route }) => {
 
   const { t } = useTranslation();
   const { wasteId } = route?.params;
-  reactotron.log(waste);
-  React.useLayoutEffect(() => {
-    navigation.setOptions({
-      headerLeft: () => (
-        <TouchableOpacity style={{ marginHorizontal: 10 }} onPress={() => navigation.pop()}>
-          <Icon name="arrowBack" width={24} height={24} />
-        </TouchableOpacity>
-      ),
-      headerRight: () => (
-        <View style={{ marginHorizontal: 20 }}>
-          <Icon name="pencil" width={20} height={20} />
-        </View>
-      ),
-      headerTitle: ''
-    });
-  }, []);
+
+  React.useLayoutEffect(
+    () =>
+      navigation?.setOptions({
+        headerLeft: () => (
+          <TouchableOpacity style={{ marginHorizontal: 10 }} onPress={() => navigation.pop()}>
+            <Icon name="arrowBack" width={24} height={24} />
+          </TouchableOpacity>
+        ),
+        headerRight: () => (
+          <View style={{ marginHorizontal: 20 }}>
+            <Icon name="pencil" width={20} height={20} />
+          </View>
+        ),
+        headerTitle: ''
+      }),
+    []
+  );
 
   React.useEffect(() => {
     WasteCreators.getWasteById({ dispatch, id: wasteId });
@@ -42,7 +43,6 @@ const WasteContainer = ({ navigation, route }) => {
 
   React.useEffect(
     () => () => {
-      reactotron.log('UNMOUNTED');
       dispatch(WasteCreators.setWaste(null));
     },
     []

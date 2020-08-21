@@ -1,11 +1,13 @@
 export const Types = {
   IS_LOADING: 'waste/IS_LOADING',
-  WASTES: 'waste/WASTES'
+  WASTES: 'waste/WASTES',
+  WASTE: 'waste/WASTE'
 };
 
 export const INITIAL_STATE = {
   isLoading: false,
-  wastes: null
+  wastes: null,
+  waste: null
 };
 
 export default (state = INITIAL_STATE, { type, payload }) => {
@@ -14,6 +16,8 @@ export default (state = INITIAL_STATE, { type, payload }) => {
       return { ...state, isLoading: payload };
     case Types.WASTES:
       return { ...state, wastes: payload };
+    case Types.WASTE:
+      return { ...state, waste: payload };
     case Types.CLEAR:
       return INITIAL_STATE;
     default:
@@ -88,6 +92,10 @@ export const Creators = {
     type: Types.WASTES,
     payload: wastes
   }),
+  setWaste: (waste) => ({
+    type: Types.WASTE,
+    payload: waste
+  }),
   clear: () => ({
     type: Types.CLEAR
   }),
@@ -98,6 +106,16 @@ export const Creators = {
     );
     dispatch(Creators.setWastes(wastesByDate));
     dispatch(Creators.setWastes(wastesMock));
+    dispatch(Creators.setIsLoading(false));
+  },
+  getWasteById: ({ dispatch, id }) => {
+    dispatch(Creators.setIsLoading(true));
+
+    const mockedWaste = {
+      ...wastesMock.find((waste) => waste?.id === id)
+    };
+
+    dispatch(Creators.setWaste(mockedWaste));
     dispatch(Creators.setIsLoading(false));
   }
 };

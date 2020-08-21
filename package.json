@@ -78,7 +78,8 @@
 			"node_modules/(?!(jest-)?react-native|static-container/.*)"
 		],
 		"coveragePathIgnorePatterns": [
-			"/node_modules/"
+			"/node_modules/",
+			"/src/assets/svgs/"
 		],
 		"setupFilesAfterEnv": [
 			"jest-enzyme"
