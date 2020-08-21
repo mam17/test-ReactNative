@@ -28,7 +28,10 @@ export const wastesMock = [
     date: '22-09-2019 18:10',
     cost: 26.0,
     canceled: false,
-    description: 'Almoço restaurante1'
+    description: 'Almoço restaurante1',
+    refundable: true,
+    establishment: 'Contele Filial de Santos - SP',
+    receipt: 'https://www.topdata.com.br/media/comprovante-de-ponto-do-trabalhador-1280x720.jpg'
   },
   {
     id: 2,
@@ -36,7 +39,10 @@ export const wastesMock = [
     date: '22-09-2019 20:10',
     cost: 326.0,
     canceled: false,
-    description: 'Almoço restaurante2'
+    description: 'Almoço restaurante2',
+    refundable: true,
+    establishment: 'Contele Filial de Santos - SP',
+    receipt: 'https://www.topdata.com.br/media/comprovante-de-ponto-do-trabalhador-1280x720.jpg'
   },
   {
     id: 3,
@@ -44,7 +50,10 @@ export const wastesMock = [
     date: '20-09-2019 18:10',
     cost: 26.0,
     canceled: true,
-    description: 'Almoço restaurante3'
+    description: 'Almoço restaurante3',
+    refundable: true,
+    establishment: 'Contele Filial de Santos - SP',
+    receipt: 'https://www.topdata.com.br/media/comprovante-de-ponto-do-trabalhador-1280x720.jpg'
   },
   {
     id: 4,
@@ -52,7 +61,10 @@ export const wastesMock = [
     date: '20-09-2019 18:10',
     cost: 26.0,
     canceled: false,
-    description: 'Almoço restaurante4'
+    description: 'Almoço restaurante4',
+    refundable: true,
+    establishment: 'Contele Filial de Santos - SP',
+    receipt: 'https://www.topdata.com.br/media/comprovante-de-ponto-do-trabalhador-1280x720.jpg'
   },
   {
     id: 5,
@@ -60,7 +72,10 @@ export const wastesMock = [
     date: '14-09-2019 18:10',
     cost: 26.0,
     canceled: false,
-    description: 'Almoço restaurante5'
+    description: 'Almoço restaurante5',
+    refundable: true,
+    establishment: 'Contele Filial de Santos - SP',
+    receipt: 'https://www.topdata.com.br/media/comprovante-de-ponto-do-trabalhador-1280x720.jpg'
   }
 ];
 
@@ -78,6 +93,10 @@ export const Creators = {
   }),
   getWastes: ({ dispatch }) => {
     dispatch(Creators.setIsLoading(true));
+    const wastesByDate = wastesMock?.sort((currentWaste, nextWaste) =>
+      currentWaste?.date > nextWaste ? -1 : 1
+    );
+    dispatch(Creators.setWastes(wastesByDate));
     dispatch(Creators.setWastes(wastesMock));
     dispatch(Creators.setIsLoading(false));
   }

@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import { COLORS } from '../styles/colors';
 import Icon from './Icon';
 
-const Container = styled.View`
+const Container = styled.TouchableOpacity`
   height: 70px;
   background-color: ${COLORS.white};
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
@@ -52,14 +52,14 @@ const CostTitle = styled.Text`
   color: ${({ disabled }) => (disabled ? COLORS.blueLight3 : COLORS.greyDark)};
 `;
 
-const WasteCardItem = ({ disabled, subtitle, title, cost }) => (
-  <Container>
+const WasteCardItem = ({ disabled, subtitle, title, cost, onPressItem, icon }) => (
+  <Container onPress={onPressItem}>
     <ContentLeft>
       <Title disabled={disabled} testID="WasteCardItem-Title">
         {title}
       </Title>
       <SubTitleBox>
-        <Icon name="SUPPLY" width={16} height={16} />
+        <Icon name={icon} width={16} height={16} />
         <SubTitle testID="WasteCardItem-Subtitle" disabled={disabled}>
           {' '}
           {subtitle}
@@ -87,7 +87,9 @@ WasteCardItem.propTypes = {
   disabled: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  cost: PropTypes.number.isRequired
+  cost: PropTypes.number.isRequired,
+  onPressItem: PropTypes.func.isRequired,
+  icon: PropTypes.string.isRequired
 };
 
 export default WasteCardItem;

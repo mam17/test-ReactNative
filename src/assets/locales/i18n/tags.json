@@ -1,6 +1,7 @@
 {
     "app": {
-      "Supply": "Supply"
+      "Supply": "Supply",
+      "Refundable": "Refundable"
     }
   }
   

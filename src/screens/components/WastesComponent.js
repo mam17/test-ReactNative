@@ -82,43 +82,43 @@ const Separator = styled.View`
   height: 8px;
 `;
 
-const WasteTypes = {
+export const WasteTypes = {
   SUPPLY: {
     description: 'Supply'
   }
 };
 
-const renderWastes = ({ t, wastes }) =>
-  wastes
-    ?.sort((currentWaste, nextWaste) => (currentWaste?.date > nextWaste ? 1 : -1))
-    ?.map((waste, index) => {
-      const day = getDay(waste?.date);
-      const prevWaste = wastes[index - 1];
-      const prevWasteDay = getDay(prevWaste?.date);
-      const shouldRenderNewHeader = day !== prevWasteDay;
+const renderWastes = ({ t, wastes, onPressWasteItem }) =>
+  wastes?.map((waste, index) => {
+    const day = getDay(waste?.date);
+    const prevWaste = wastes[index - 1];
+    const prevWasteDay = getDay(prevWaste?.date);
+    const shouldRenderNewHeader = day !== prevWasteDay;
 
-      return (
-        <React.Fragment key={waste?.id}>
-          {shouldRenderNewHeader && (
-            <DateHeader testID="DateHeader">
-              <ItemBoxHeaderInitial>
-                {day}
-                <ItemBoxHeaderFinal> {getWeekDay(waste?.date)}</ItemBoxHeaderFinal>
-              </ItemBoxHeaderInitial>
-            </DateHeader>
-          )}
-          <WasteCardItem
-            cost={waste?.cost}
-            title={waste?.description}
-            disabled={waste?.canceled}
-            subtitle={t(`app:${WasteTypes[waste?.type].description}`)}
-          />
-          <Separator />
-        </React.Fragment>
-      );
-    });
+    return (
+      <React.Fragment key={waste?.id}>
+        {shouldRenderNewHeader && (
+          <DateHeader testID="DateHeader">
+            <ItemBoxHeaderInitial>
+              {day}
+              <ItemBoxHeaderFinal> {getWeekDay(waste?.date)}</ItemBoxHeaderFinal>
+            </ItemBoxHeaderInitial>
+          </DateHeader>
+        )}
+        <WasteCardItem
+          cost={waste?.cost}
+          icon={waste?.type}
+          title={waste?.description}
+          disabled={waste?.canceled}
+          subtitle={t(`app:${WasteTypes[waste?.type].description}`)}
+          onPressItem={() => onPressWasteItem(waste?.id)}
+        />
+        <Separator />
+      </React.Fragment>
+    );
+  });
 
-const WastesComponent = ({ t, wastes, total }) => (
+const WastesComponent = ({ t, wastes, total, onPressWasteItem }) => (
   <Container>
     <Header>
       <HeaderTitleBox>
@@ -129,7 +129,7 @@ const WastesComponent = ({ t, wastes, total }) => (
       </HeaderIconBox>
     </Header>
     <Content>
-      {renderWastes({ t, wastes })}
+      {renderWastes({ t, wastes, onPressWasteItem })}
       <TotalBox>
         <TotalBoxLeft>
           <TotalBoxLeftText>TOTAL</TotalBoxLeftText>
@@ -151,7 +151,8 @@ const WastesComponent = ({ t, wastes, total }) => (
 WastesComponent.propTypes = {
   t: PropTypes.func.isRequired,
   wastes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-  total: PropTypes.number.isRequired
+  total: PropTypes.number.isRequired,
+  onPressWasteItem: PropTypes.func.isRequired
 };
 
 export default WastesComponent;
