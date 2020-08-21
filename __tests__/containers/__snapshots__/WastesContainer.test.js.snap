@@ -2,6 +2,7 @@
 
 exports[`Testing Wastes Container Should receive correctly props from store 1`] = `
 Object {
+  "loading": false,
   "onPressWasteItem": [Function],
   "t": [Function],
   "total": 404,
@@ -79,6 +80,7 @@ exports[`Testing Wastes Container Should render correctly with no components mis
 >
   <WastesContainer>
     <WastesComponent
+      loading={false}
       onPressWasteItem={[Function]}
       t={[Function]}
       total={404}

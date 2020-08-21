@@ -6,6 +6,7 @@ import { COLORS } from '../../assets/styles/colors';
 import Icon from '../../assets/components/Icon';
 import WasteCardItem from '../../assets/components/WasteCardItem';
 import { getDay, getWeekDay } from '../../helpers';
+import Loading from '../../assets/components/Loading';
 
 const Container = styled.ScrollView`
   flex: 1;
@@ -118,7 +119,7 @@ const renderWastes = ({ t, wastes, onPressWasteItem }) =>
     );
   });
 
-const WastesComponent = ({ t, wastes, total, onPressWasteItem }) => (
+const WastesComponent = ({ t, wastes, total, onPressWasteItem, loading }) => (
   <Container>
     <Header>
       <HeaderTitleBox>
@@ -145,6 +146,7 @@ const WastesComponent = ({ t, wastes, total, onPressWasteItem }) => (
         </TotalBoxRight>
       </TotalBox>
     </Content>
+    {loading && <Loading />}
   </Container>
 );
 
@@ -152,7 +154,8 @@ WastesComponent.propTypes = {
   t: PropTypes.func.isRequired,
   wastes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   total: PropTypes.number.isRequired,
-  onPressWasteItem: PropTypes.func.isRequired
+  onPressWasteItem: PropTypes.func.isRequired,
+  loading: PropTypes.bool.isRequired
 };
 
 export default WastesComponent;

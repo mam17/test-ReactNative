@@ -17,7 +17,7 @@ const getWastesTotal = (wastes) =>
 const WastesContainer = ({ navigation }) => {
   const [
     {
-      Waste: { wastes }
+      Waste: { wastes, isLoading }
     },
     dispatch
   ] = useStateValue();
@@ -39,6 +39,7 @@ const WastesContainer = ({ navigation }) => {
   return (
     <WastesComponent
       t={t}
+      loading={isLoading}
       wastes={wastes}
       total={getWastesTotal(wastes)}
       onPressWasteItem={(id) =>

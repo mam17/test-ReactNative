@@ -6,6 +6,7 @@ import { COLORS } from '../../assets/styles/colors';
 import Icon from '../../assets/components/Icon';
 import DetailBox from '../../assets/components/DetailBox';
 import { WasteTypes } from './WastesComponent';
+import Loading from '../../assets/components/Loading';
 
 const Container = styled.View`
   flex: 1;
@@ -98,7 +99,7 @@ const ReceiptImage = styled.Image`
   height: 100%;
 `;
 
-const WasteComponent = ({ t, waste }) => (
+const WasteComponent = ({ t, waste, loading }) => (
   <Container>
     <Header>
       <HeaderContent>
@@ -106,7 +107,10 @@ const WasteComponent = ({ t, waste }) => (
           <HeaderTitle style={{ fontSize: 18 }}>R$</HeaderTitle>
         </HeaderContentLeft>
         <HeaderContentRight>
-          <HeaderTitle style={{ fontSize: 48 }}> 26,00</HeaderTitle>
+          <HeaderTitle style={{ fontSize: 48 }}>
+            {' '}
+            {waste?.cost?.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
+          </HeaderTitle>
         </HeaderContentRight>
       </HeaderContent>
     </Header>
@@ -146,6 +150,7 @@ const WasteComponent = ({ t, waste }) => (
         />
       </ReceiptImageBox>
     </Content>
+    {loading && <Loading />}
   </Container>
 );
 
@@ -157,8 +162,10 @@ WasteComponent.propTypes = {
     type: PropTypes.string.isRequired,
     refundable: PropTypes.bool.isRequired,
     establishment: PropTypes.string.isRequired,
-    receipt: PropTypes.string.isRequired
-  }).isRequired
+    receipt: PropTypes.string.isRequired,
+    cost: PropTypes.number.isRequired
+  }).isRequired,
+  loading: PropTypes.bool.isRequired
 };
 
 export default WasteComponent;

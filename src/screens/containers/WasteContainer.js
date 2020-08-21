@@ -11,7 +11,7 @@ import Icon from '../../assets/components/Icon';
 const WasteContainer = ({ navigation, route }) => {
   const [
     {
-      Waste: { waste }
+      Waste: { waste, isLoading }
     },
     dispatch
   ] = useStateValue();
@@ -48,7 +48,7 @@ const WasteContainer = ({ navigation, route }) => {
     []
   );
 
-  return <WasteComponent t={t} waste={waste} />;
+  return <WasteComponent t={t} waste={waste} loading={isLoading} />;
 };
 
 WasteContainer.propTypes = {
