@@ -86,4 +86,10 @@ describe('Testing Wastes Container', () => {
 
     expect(component.findWhere((node) => node.text() === '404.00')).toExist();
   });
+
+  it('Should navigate with id on press card item', () => {
+    component.update();
+
+    component.find('WasteCardItem').at(0).simulate('click');
+  });
 });

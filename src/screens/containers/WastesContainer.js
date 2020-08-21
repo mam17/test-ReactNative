@@ -24,11 +24,13 @@ const WastesContainer = ({ navigation }) => {
 
   const { t } = useTranslation();
 
-  React.useLayoutEffect(() => {
-    navigation.setOptions({
-      headerShown: false
-    });
-  }, []);
+  React.useLayoutEffect(
+    () =>
+      navigation?.setOptions({
+        headerShown: false
+      }),
+    []
+  );
 
   React.useEffect(() => {
     WasteCreators.getWastes({ dispatch });
@@ -40,7 +42,7 @@ const WastesContainer = ({ navigation }) => {
       wastes={wastes}
       total={getWastesTotal(wastes)}
       onPressWasteItem={(id) =>
-        navigation.navigate('Waste', {
+        navigation?.navigate('Waste', {
           wasteId: id
         })
       }
