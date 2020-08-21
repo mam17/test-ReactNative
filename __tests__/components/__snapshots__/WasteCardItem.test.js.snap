@@ -1,0 +1,1543 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing WasteCardItem WasteCardItem should render correctly 1`] = `
+<Styled(View)>
+  <Styled(View)>
+    <Styled(Text)
+      disabled={true}
+      testID="WasteCardItem-Title"
+    >
+      Title testing
+    </Styled(Text)>
+    <Styled(View)>
+      <Icon
+        height={16}
+        name="SUPPLY"
+        width={16}
+      />
+      <Styled(Text)
+        disabled={true}
+        testID="WasteCardItem-Subtitle"
+      >
+         
+        Subtitle testing
+      </Styled(Text)>
+    </Styled(View)>
+  </Styled(View)>
+  <Styled(View)>
+    <Styled(View)>
+      <Icon
+        fill="#9DADB8"
+        height={18}
+        name="refundable"
+        width={18}
+      />
+      <Styled(Text)
+        disabled={true}
+        testID="WasteCardItem-Cost"
+      >
+         
+        777.00
+      </Styled(Text)>
+    </Styled(View)>
+  </Styled(View)>
+</Styled(View)>
+`;
+
+exports[`Testing WasteCardItem WasteCardItem should render correctly if disabled 1`] = `
+<WasteCardItem
+  cost={777}
+  disabled={true}
+  subtitle="Subtitle testing"
+  title="Title testing"
+>
+  <Styled(View)>
+    <StyledNativeComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(View)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [
+              "
+  height: 70px;
+  background-color: ",
+              "#FFFFFF",
+              ";
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 8px 16px;
+  flex-direction: row;
+",
+            ],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "flexDirection": "row",
+              "height": 70,
+              "paddingBottom": 8,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 8,
+              "shadowColor": "rgba(0, 0, 0, 0.08)",
+              "shadowOffset": Object {
+                "height": 1,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 4,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FFFFFF",
+                "flexDirection": "row",
+                "height": 70,
+                "paddingBottom": 8,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 8,
+                "shadowColor": "rgba(0, 0, 0, 0.08)",
+                "shadowOffset": Object {
+                  "height": 1,
+                  "width": 0,
+                },
+                "shadowOpacity": 1,
+                "shadowRadius": 4,
+              },
+            ]
+          }
+        >
+          <Styled(View)>
+            <StyledNativeComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(View)",
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  flex: 3;
+  justify-content: space-around;
+",
+                    ],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "flexBasis": 0,
+                      "flexGrow": 3,
+                      "flexShrink": 1,
+                      "justifyContent": "space-around",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "flexBasis": 0,
+                        "flexGrow": 3,
+                        "flexShrink": 1,
+                        "justifyContent": "space-around",
+                      },
+                    ]
+                  }
+                >
+                  <Styled(Text)
+                    disabled={true}
+                    testID="WasteCardItem-Title"
+                  >
+                    <StyledNativeComponent
+                      disabled={true}
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "displayName": "Styled(Text)",
+                          "inlineStyle": InlineStyle {
+                            "rules": Array [
+                              "
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: ",
+                              [Function],
+                              ";
+  color: ",
+                              [Function],
+                              ";
+",
+                            ],
+                          },
+                          "propTypes": Object {
+                            "accessible": [Function],
+                            "adjustsFontSizeToFit": [Function],
+                            "allowFontScaling": [Function],
+                            "dataDetectorType": [Function],
+                            "disabled": [Function],
+                            "ellipsizeMode": [Function],
+                            "maxFontSizeMultiplier": [Function],
+                            "minimumFontScale": [Function],
+                            "nativeID": [Function],
+                            "numberOfLines": [Function],
+                            "onLayout": [Function],
+                            "onLongPress": [Function],
+                            "onPress": [Function],
+                            "pressRetentionOffset": [Function],
+                            "selectable": [Function],
+                            "selectionColor": [Function],
+                            "style": [Function],
+                            "suppressHighlighting": [Function],
+                            "testID": [Function],
+                            "textBreakStrategy": [Function],
+                          },
+                          "render": [Function],
+                          "styledComponentId": "StyledNativeComponent",
+                          "target": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                      testID="WasteCardItem-Title"
+                    >
+                      <Text
+                        disabled={true}
+                        style={
+                          Array [
+                            Object {
+                              "color": "#9DADB8",
+                              "fontSize": 16,
+                              "fontStyle": "normal",
+                              "fontWeight": "normal",
+                              "lineHeight": 22,
+                              "textDecorationLine": "line-through",
+                            },
+                          ]
+                        }
+                        testID="WasteCardItem-Title"
+                      >
+                        <Text
+                          disabled={true}
+                          style={
+                            Array [
+                              Object {
+                                "color": "#9DADB8",
+                                "fontSize": 16,
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                                "lineHeight": 22,
+                                "textDecorationLine": "line-through",
+                              },
+                            ]
+                          }
+                          testID="WasteCardItem-Title"
+                        >
+                          Title testing
+                        </Text>
+                      </Text>
+                    </StyledNativeComponent>
+                  </Styled(Text)>
+                  <Styled(View)>
+                    <StyledNativeComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "displayName": "Styled(View)",
+                          "inlineStyle": InlineStyle {
+                            "rules": Array [
+                              "
+  flex-direction: row;
+  align-items: center;
+",
+                            ],
+                          },
+                          "render": [Function],
+                          "styledComponentId": "StyledNativeComponent",
+                          "target": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <View
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                            },
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                              },
+                            ]
+                          }
+                        >
+                          <Icon
+                            height={16}
+                            name="SUPPLY"
+                            width={16}
+                          >
+                            <SvgIcon
+                              fill="#000"
+                              fillRule="evenodd"
+                              height={16}
+                              name="SUPPLY"
+                              svgs={
+                                Object {
+                                  "SUPPLY": Object {
+                                    "height": "16px",
+                                    "svg": <G
+                                      fill="none"
+                                      height="16"
+                                      viewBox="0 0 16 16"
+                                      width="16"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <Path
+                                        d="M8.00008 0.0588379C3.62176 0.0588379 0.059021 3.62158 0.059021 7.9999C0.059021 11.3938 2.20012 14.2963 5.20234 15.4305C5.72054 15.6259 6.26476 15.7701 6.82796 15.8538C7.21046 15.9107 7.6021 15.941 8.00076 15.941C8.84522 15.941 9.65802 15.8074 10.4216 15.562C10.6937 15.4748 10.9588 15.3721 11.2182 15.2568C13.9976 14.02 15.9418 11.2329 15.9418 7.99993C15.9411 3.62161 12.379 0.0588702 8.00001 0.0588702L8.00008 0.0588379ZM11.2176 14.4039V4.10182C11.2176 3.88173 11.0397 3.70386 10.8196 3.70386C10.4582 3.70386 10.1327 3.8494 9.85071 4.13627C8.46556 5.54463 8.50563 10.3252 8.51477 10.8652L8.5211 11.2569H10.4217V14.7485C9.66516 15.0213 8.85023 15.1704 8.0009 15.1704C7.58605 15.1704 7.17965 15.1331 6.78379 15.0649L6.45614 9.24875C7.2134 9.04836 7.77239 8.3607 7.77239 7.54085L7.77169 3.9486C7.77169 3.81922 7.66763 3.71515 7.53825 3.71515C7.40887 3.71515 7.3048 3.81992 7.3048 3.9486V6.77946C7.3048 6.9243 7.18738 7.04172 7.04254 7.04172C6.8977 7.04172 6.78028 6.92429 6.78028 6.77946V3.9486C6.78028 3.80656 6.66497 3.69125 6.52294 3.69125C6.38091 3.69125 6.26559 3.80656 6.26559 3.9486V6.77946C6.26559 6.9243 6.14817 7.04172 6.00333 7.04172C5.85849 7.04172 5.74107 6.92429 5.74107 6.77946V3.9486C5.74107 3.80656 5.62576 3.69125 5.48373 3.69125C5.34169 3.69125 5.22638 3.80656 5.22638 3.9486V6.77946C5.22638 6.9243 5.10896 7.04172 4.96412 7.04172C4.81928 7.04172 4.70186 6.92429 4.70186 6.77946L4.70116 3.9486C4.70116 3.81922 4.59639 3.71515 4.46771 3.71515C4.33904 3.71515 4.23427 3.81992 4.23427 3.9486V7.53942C4.23427 8.35926 4.79326 9.04692 5.55052 9.24731L5.24818 14.6192C2.65708 13.5378 0.830437 10.9784 0.830437 8.00009C0.830437 4.04639 4.0465 0.830329 8.0002 0.830329C11.9539 0.830329 15.17 4.04639 15.17 8.00009C15.17 10.7964 13.5591 13.223 11.2177 14.4041L11.2176 14.4039Z"
+                                        fill="#9DADB8"
+                                      />
+                                    </G>,
+                                    "viewBox": "0 0 16 16",
+                                    "width": "16px",
+                                  },
+                                  "refundable": Object {
+                                    "height": "18px",
+                                    "svg": <G
+                                      fill="none"
+                                      height="18"
+                                      viewBox="0 0 16 18"
+                                      width="16"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <Path
+                                        d="M12.5998 4.09386L11.7776 5.14955C13.55 6.52783 14.4337 8.76083 14.0848 10.9752C13.8287 12.6008 12.9563 14.0293 11.6258 14.9985C10.2952 15.9663 8.66713 16.3604 7.04144 16.1031C3.68628 15.5746 1.38512 12.415 1.91245 9.05984C2.16852 7.43428 3.04217 6.00581 4.37148 5.03659C5.5326 4.19056 6.92091 3.78511 8.33688 3.86545L7.17953 5.07927L8.03938 5.89896L9.86578 3.9822V3.98345L10.6842 3.12485L9.82687 2.30641L7.91011 0.480011L7.09167 1.33861L8.34064 2.52859C6.64355 2.44825 4.98033 2.94158 3.58698 3.95707C1.96769 5.13576 0.904485 6.87553 0.593198 8.85373C-0.049493 12.9384 2.75097 16.7845 6.83565 17.4272C7.22982 17.49 7.6252 17.5201 8.01686 17.5201C9.58968 17.5201 11.1186 17.0255 12.4154 16.0816C14.0347 14.9029 15.0979 13.1631 15.4092 11.1849C15.8322 8.48864 14.7565 5.77218 12.5999 4.09411L12.5998 4.09386Z"
+                                      />
+                                      <Path
+                                        d="M8.73375 13.8434V13.0727C9.64631 12.971 10.535 12.3936 10.535 11.299C10.535 9.81157 9.15175 9.64084 8.14128 9.51657C7.49483 9.44 7.00025 9.34962 7.00025 8.95798C7.00025 8.4132 7.76721 8.35545 8.09736 8.35545C8.58689 8.35545 9.10908 8.58516 9.28733 8.87889L9.3388 8.96425L10.3543 8.49479L10.3041 8.39186C9.92626 7.61864 9.24842 7.39518 8.73504 7.30482V6.62697H7.54632V7.30231C6.44044 7.46549 5.78268 8.07932 5.78268 8.95798C5.78268 10.3902 7.08313 10.5359 8.03209 10.6425C8.87813 10.7417 9.27104 10.9513 9.27104 11.299C9.27104 11.9643 8.34968 12.0158 8.06725 12.0158C7.43838 12.0158 6.83335 11.702 6.6576 11.2853L6.61367 11.1823L5.51155 11.6493L5.55548 11.7522C5.88184 12.5167 6.58604 12.9949 7.54506 13.1092V13.8422L8.73375 13.8434Z"
+                                      />
+                                    </G>,
+                                    "viewBox": "0 0 18 18",
+                                    "width": "18px",
+                                  },
+                                  "search": Object {
+                                    "height": "20px",
+                                    "svg": <G
+                                      fill="none"
+                                      height="20"
+                                      viewBox="0 0 20 20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <Path
+                                        d="M11.5938 0.0625219C6.99256 0.0625219 3.2464 3.80508 3.2464 8.40636C3.2464 10.2364 3.83892 11.9276 4.84015 13.3038L0.448868 17.6987C-0.0648755 18.2124 -0.0648755 19.0412 0.448868 19.5549C0.703868 19.8099 1.03761 19.9375 1.37512 19.9375C1.71264 19.9375 2.04638 19.8099 2.30138 19.5512L6.69266 15.1599C8.06892 16.1612 9.7601 16.7537 11.5901 16.7537C16.1914 16.7537 19.9339 13.0111 19.9339 8.40622C19.9339 3.80134 16.1952 0.0623779 11.5939 0.0623779L11.5938 0.0625219ZM11.5938 14.1287C8.44 14.1287 5.87128 11.5636 5.87128 8.40612C5.87128 5.25228 8.4364 2.6874 11.5938 2.6874C14.7477 2.6874 17.3126 5.25252 17.3126 8.40612C17.3126 11.5636 14.7474 14.1287 11.5938 14.1287Z"
+                                        fill="#566475"
+                                      />
+                                    </G>,
+                                    "viewBox": "0 0 20 20",
+                                    "width": "20px",
+                                  },
+                                }
+                              }
+                              viewBox="0 0 100 100"
+                              width={16}
+                            >
+                              <Svg
+                                height="16"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 16 16"
+                                width="16"
+                              >
+                                <RNSVGSvgView
+                                  align="xMidYMid"
+                                  bbHeight="16"
+                                  bbWidth="16"
+                                  focusable={false}
+                                  height="16"
+                                  meetOrSlice={0}
+                                  minX={0}
+                                  minY={0}
+                                  style={
+                                    Array [
+                                      Object {
+                                        "backgroundColor": "transparent",
+                                        "borderWidth": 0,
+                                      },
+                                      undefined,
+                                      Object {
+                                        "opacity": 1,
+                                      },
+                                      Object {
+                                        "flex": 0,
+                                        "height": 16,
+                                        "width": 16,
+                                      },
+                                    ]
+                                  }
+                                  vbHeight={16}
+                                  vbWidth={16}
+                                  width="16"
+                                >
+                                  <RNSVGSvgView
+                                    align="xMidYMid"
+                                    bbHeight="16"
+                                    bbWidth="16"
+                                    focusable={false}
+                                    height="16"
+                                    meetOrSlice={0}
+                                    minX={0}
+                                    minY={0}
+                                    style={
+                                      Array [
+                                        Object {
+                                          "backgroundColor": "transparent",
+                                          "borderWidth": 0,
+                                        },
+                                        undefined,
+                                        Object {
+                                          "opacity": 1,
+                                        },
+                                        Object {
+                                          "flex": 0,
+                                          "height": 16,
+                                          "width": 16,
+                                        },
+                                      ]
+                                    }
+                                    vbHeight={16}
+                                    vbWidth={16}
+                                    width="16"
+                                  >
+                                    <G>
+                                      <RNSVGGroup
+                                        fill={
+                                          Array [
+                                            0,
+                                            4278190080,
+                                          ]
+                                        }
+                                        fillOpacity={1}
+                                        fillRule={1}
+                                        font={Object {}}
+                                        matrix={
+                                          Array [
+                                            1,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                          ]
+                                        }
+                                        opacity={1}
+                                        originX={0}
+                                        originY={0}
+                                        propList={Array []}
+                                        rotation={0}
+                                        scaleX={1}
+                                        scaleY={1}
+                                        skewX={0}
+                                        skewY={0}
+                                        stroke={null}
+                                        strokeDasharray={null}
+                                        strokeDashoffset={null}
+                                        strokeLinecap={0}
+                                        strokeLinejoin={0}
+                                        strokeMiterlimit={4}
+                                        strokeOpacity={1}
+                                        strokeWidth={1}
+                                        vectorEffect={0}
+                                        x={0}
+                                        y={0}
+                                      >
+                                        <RNSVGGroup
+                                          fill={
+                                            Array [
+                                              0,
+                                              4278190080,
+                                            ]
+                                          }
+                                          fillOpacity={1}
+                                          fillRule={1}
+                                          font={Object {}}
+                                          matrix={
+                                            Array [
+                                              1,
+                                              0,
+                                              0,
+                                              1,
+                                              0,
+                                              0,
+                                            ]
+                                          }
+                                          opacity={1}
+                                          originX={0}
+                                          originY={0}
+                                          propList={Array []}
+                                          rotation={0}
+                                          scaleX={1}
+                                          scaleY={1}
+                                          skewX={0}
+                                          skewY={0}
+                                          stroke={null}
+                                          strokeDasharray={null}
+                                          strokeDashoffset={null}
+                                          strokeLinecap={0}
+                                          strokeLinejoin={0}
+                                          strokeMiterlimit={4}
+                                          strokeOpacity={1}
+                                          strokeWidth={1}
+                                          vectorEffect={0}
+                                          x={0}
+                                          y={0}
+                                        >
+                                          <G
+                                            fill="#000"
+                                            fillRule="evenodd"
+                                            height="16"
+                                            viewBox="0 0 16 16"
+                                            width="16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <RNSVGGroup
+                                              fill={
+                                                Array [
+                                                  0,
+                                                  4278190080,
+                                                ]
+                                              }
+                                              fillOpacity={1}
+                                              fillRule={0}
+                                              font={Object {}}
+                                              matrix={
+                                                Array [
+                                                  1,
+                                                  0,
+                                                  0,
+                                                  1,
+                                                  0,
+                                                  0,
+                                                ]
+                                              }
+                                              opacity={1}
+                                              originX={0}
+                                              originY={0}
+                                              propList={
+                                                Array [
+                                                  "fill",
+                                                  "fillRule",
+                                                ]
+                                              }
+                                              rotation={0}
+                                              scaleX={1}
+                                              scaleY={1}
+                                              skewX={0}
+                                              skewY={0}
+                                              stroke={null}
+                                              strokeDasharray={null}
+                                              strokeDashoffset={null}
+                                              strokeLinecap={0}
+                                              strokeLinejoin={0}
+                                              strokeMiterlimit={4}
+                                              strokeOpacity={1}
+                                              strokeWidth={1}
+                                              vectorEffect={0}
+                                              x={0}
+                                              y={0}
+                                            >
+                                              <RNSVGGroup
+                                                fill={
+                                                  Array [
+                                                    0,
+                                                    4278190080,
+                                                  ]
+                                                }
+                                                fillOpacity={1}
+                                                fillRule={0}
+                                                font={Object {}}
+                                                matrix={
+                                                  Array [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                  ]
+                                                }
+                                                opacity={1}
+                                                originX={0}
+                                                originY={0}
+                                                propList={
+                                                  Array [
+                                                    "fill",
+                                                    "fillRule",
+                                                  ]
+                                                }
+                                                rotation={0}
+                                                scaleX={1}
+                                                scaleY={1}
+                                                skewX={0}
+                                                skewY={0}
+                                                stroke={null}
+                                                strokeDasharray={null}
+                                                strokeDashoffset={null}
+                                                strokeLinecap={0}
+                                                strokeLinejoin={0}
+                                                strokeMiterlimit={4}
+                                                strokeOpacity={1}
+                                                strokeWidth={1}
+                                                vectorEffect={0}
+                                                x={0}
+                                                y={0}
+                                              >
+                                                <Path
+                                                  d="M8.00008 0.0588379C3.62176 0.0588379 0.059021 3.62158 0.059021 7.9999C0.059021 11.3938 2.20012 14.2963 5.20234 15.4305C5.72054 15.6259 6.26476 15.7701 6.82796 15.8538C7.21046 15.9107 7.6021 15.941 8.00076 15.941C8.84522 15.941 9.65802 15.8074 10.4216 15.562C10.6937 15.4748 10.9588 15.3721 11.2182 15.2568C13.9976 14.02 15.9418 11.2329 15.9418 7.99993C15.9411 3.62161 12.379 0.0588702 8.00001 0.0588702L8.00008 0.0588379ZM11.2176 14.4039V4.10182C11.2176 3.88173 11.0397 3.70386 10.8196 3.70386C10.4582 3.70386 10.1327 3.8494 9.85071 4.13627C8.46556 5.54463 8.50563 10.3252 8.51477 10.8652L8.5211 11.2569H10.4217V14.7485C9.66516 15.0213 8.85023 15.1704 8.0009 15.1704C7.58605 15.1704 7.17965 15.1331 6.78379 15.0649L6.45614 9.24875C7.2134 9.04836 7.77239 8.3607 7.77239 7.54085L7.77169 3.9486C7.77169 3.81922 7.66763 3.71515 7.53825 3.71515C7.40887 3.71515 7.3048 3.81992 7.3048 3.9486V6.77946C7.3048 6.9243 7.18738 7.04172 7.04254 7.04172C6.8977 7.04172 6.78028 6.92429 6.78028 6.77946V3.9486C6.78028 3.80656 6.66497 3.69125 6.52294 3.69125C6.38091 3.69125 6.26559 3.80656 6.26559 3.9486V6.77946C6.26559 6.9243 6.14817 7.04172 6.00333 7.04172C5.85849 7.04172 5.74107 6.92429 5.74107 6.77946V3.9486C5.74107 3.80656 5.62576 3.69125 5.48373 3.69125C5.34169 3.69125 5.22638 3.80656 5.22638 3.9486V6.77946C5.22638 6.9243 5.10896 7.04172 4.96412 7.04172C4.81928 7.04172 4.70186 6.92429 4.70186 6.77946L4.70116 3.9486C4.70116 3.81922 4.59639 3.71515 4.46771 3.71515C4.33904 3.71515 4.23427 3.81992 4.23427 3.9486V7.53942C4.23427 8.35926 4.79326 9.04692 5.55052 9.24731L5.24818 14.6192C2.65708 13.5378 0.830437 10.9784 0.830437 8.00009C0.830437 4.04639 4.0465 0.830329 8.0002 0.830329C11.9539 0.830329 15.17 4.04639 15.17 8.00009C15.17 10.7964 13.5591 13.223 11.2177 14.4041L11.2176 14.4039Z"
+                                                  fill="#9DADB8"
+                                                >
+                                                  <RNSVGPath
+                                                    d="M8.00008 0.0588379C3.62176 0.0588379 0.059021 3.62158 0.059021 7.9999C0.059021 11.3938 2.20012 14.2963 5.20234 15.4305C5.72054 15.6259 6.26476 15.7701 6.82796 15.8538C7.21046 15.9107 7.6021 15.941 8.00076 15.941C8.84522 15.941 9.65802 15.8074 10.4216 15.562C10.6937 15.4748 10.9588 15.3721 11.2182 15.2568C13.9976 14.02 15.9418 11.2329 15.9418 7.99993C15.9411 3.62161 12.379 0.0588702 8.00001 0.0588702L8.00008 0.0588379ZM11.2176 14.4039V4.10182C11.2176 3.88173 11.0397 3.70386 10.8196 3.70386C10.4582 3.70386 10.1327 3.8494 9.85071 4.13627C8.46556 5.54463 8.50563 10.3252 8.51477 10.8652L8.5211 11.2569H10.4217V14.7485C9.66516 15.0213 8.85023 15.1704 8.0009 15.1704C7.58605 15.1704 7.17965 15.1331 6.78379 15.0649L6.45614 9.24875C7.2134 9.04836 7.77239 8.3607 7.77239 7.54085L7.77169 3.9486C7.77169 3.81922 7.66763 3.71515 7.53825 3.71515C7.40887 3.71515 7.3048 3.81992 7.3048 3.9486V6.77946C7.3048 6.9243 7.18738 7.04172 7.04254 7.04172C6.8977 7.04172 6.78028 6.92429 6.78028 6.77946V3.9486C6.78028 3.80656 6.66497 3.69125 6.52294 3.69125C6.38091 3.69125 6.26559 3.80656 6.26559 3.9486V6.77946C6.26559 6.9243 6.14817 7.04172 6.00333 7.04172C5.85849 7.04172 5.74107 6.92429 5.74107 6.77946V3.9486C5.74107 3.80656 5.62576 3.69125 5.48373 3.69125C5.34169 3.69125 5.22638 3.80656 5.22638 3.9486V6.77946C5.22638 6.9243 5.10896 7.04172 4.96412 7.04172C4.81928 7.04172 4.70186 6.92429 4.70186 6.77946L4.70116 3.9486C4.70116 3.81922 4.59639 3.71515 4.46771 3.71515C4.33904 3.71515 4.23427 3.81992 4.23427 3.9486V7.53942C4.23427 8.35926 4.79326 9.04692 5.55052 9.24731L5.24818 14.6192C2.65708 13.5378 0.830437 10.9784 0.830437 8.00009C0.830437 4.04639 4.0465 0.830329 8.0002 0.830329C11.9539 0.830329 15.17 4.04639 15.17 8.00009C15.17 10.7964 13.5591 13.223 11.2177 14.4041L11.2176 14.4039Z"
+                                                    fill={
+                                                      Array [
+                                                        0,
+                                                        4288523704,
+                                                      ]
+                                                    }
+                                                    fillOpacity={1}
+                                                    fillRule={1}
+                                                    matrix={
+                                                      Array [
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                      ]
+                                                    }
+                                                    opacity={1}
+                                                    originX={0}
+                                                    originY={0}
+                                                    propList={
+                                                      Array [
+                                                        "fill",
+                                                      ]
+                                                    }
+                                                    rotation={0}
+                                                    scaleX={1}
+                                                    scaleY={1}
+                                                    skewX={0}
+                                                    skewY={0}
+                                                    stroke={null}
+                                                    strokeDasharray={null}
+                                                    strokeDashoffset={null}
+                                                    strokeLinecap={0}
+                                                    strokeLinejoin={0}
+                                                    strokeMiterlimit={4}
+                                                    strokeOpacity={1}
+                                                    strokeWidth={1}
+                                                    vectorEffect={0}
+                                                    x={0}
+                                                    y={0}
+                                                  >
+                                                    <RNSVGPath
+                                                      d="M8.00008 0.0588379C3.62176 0.0588379 0.059021 3.62158 0.059021 7.9999C0.059021 11.3938 2.20012 14.2963 5.20234 15.4305C5.72054 15.6259 6.26476 15.7701 6.82796 15.8538C7.21046 15.9107 7.6021 15.941 8.00076 15.941C8.84522 15.941 9.65802 15.8074 10.4216 15.562C10.6937 15.4748 10.9588 15.3721 11.2182 15.2568C13.9976 14.02 15.9418 11.2329 15.9418 7.99993C15.9411 3.62161 12.379 0.0588702 8.00001 0.0588702L8.00008 0.0588379ZM11.2176 14.4039V4.10182C11.2176 3.88173 11.0397 3.70386 10.8196 3.70386C10.4582 3.70386 10.1327 3.8494 9.85071 4.13627C8.46556 5.54463 8.50563 10.3252 8.51477 10.8652L8.5211 11.2569H10.4217V14.7485C9.66516 15.0213 8.85023 15.1704 8.0009 15.1704C7.58605 15.1704 7.17965 15.1331 6.78379 15.0649L6.45614 9.24875C7.2134 9.04836 7.77239 8.3607 7.77239 7.54085L7.77169 3.9486C7.77169 3.81922 7.66763 3.71515 7.53825 3.71515C7.40887 3.71515 7.3048 3.81992 7.3048 3.9486V6.77946C7.3048 6.9243 7.18738 7.04172 7.04254 7.04172C6.8977 7.04172 6.78028 6.92429 6.78028 6.77946V3.9486C6.78028 3.80656 6.66497 3.69125 6.52294 3.69125C6.38091 3.69125 6.26559 3.80656 6.26559 3.9486V6.77946C6.26559 6.9243 6.14817 7.04172 6.00333 7.04172C5.85849 7.04172 5.74107 6.92429 5.74107 6.77946V3.9486C5.74107 3.80656 5.62576 3.69125 5.48373 3.69125C5.34169 3.69125 5.22638 3.80656 5.22638 3.9486V6.77946C5.22638 6.9243 5.10896 7.04172 4.96412 7.04172C4.81928 7.04172 4.70186 6.92429 4.70186 6.77946L4.70116 3.9486C4.70116 3.81922 4.59639 3.71515 4.46771 3.71515C4.33904 3.71515 4.23427 3.81992 4.23427 3.9486V7.53942C4.23427 8.35926 4.79326 9.04692 5.55052 9.24731L5.24818 14.6192C2.65708 13.5378 0.830437 10.9784 0.830437 8.00009C0.830437 4.04639 4.0465 0.830329 8.0002 0.830329C11.9539 0.830329 15.17 4.04639 15.17 8.00009C15.17 10.7964 13.5591 13.223 11.2177 14.4041L11.2176 14.4039Z"
+                                                      fill={
+                                                        Array [
+                                                          0,
+                                                          4288523704,
+                                                        ]
+                                                      }
+                                                      fillOpacity={1}
+                                                      fillRule={1}
+                                                      matrix={
+                                                        Array [
+                                                          1,
+                                                          0,
+                                                          0,
+                                                          1,
+                                                          0,
+                                                          0,
+                                                        ]
+                                                      }
+                                                      opacity={1}
+                                                      originX={0}
+                                                      originY={0}
+                                                      propList={
+                                                        Array [
+                                                          "fill",
+                                                        ]
+                                                      }
+                                                      rotation={0}
+                                                      scaleX={1}
+                                                      scaleY={1}
+                                                      skewX={0}
+                                                      skewY={0}
+                                                      stroke={null}
+                                                      strokeDasharray={null}
+                                                      strokeDashoffset={null}
+                                                      strokeLinecap={0}
+                                                      strokeLinejoin={0}
+                                                      strokeMiterlimit={4}
+                                                      strokeOpacity={1}
+                                                      strokeWidth={1}
+                                                      vectorEffect={0}
+                                                      x={0}
+                                                      y={0}
+                                                    />
+                                                  </RNSVGPath>
+                                                </Path>
+                                              </RNSVGGroup>
+                                            </RNSVGGroup>
+                                          </G>
+                                        </RNSVGGroup>
+                                      </RNSVGGroup>
+                                    </G>
+                                  </RNSVGSvgView>
+                                </RNSVGSvgView>
+                              </Svg>
+                            </SvgIcon>
+                          </Icon>
+                          <Styled(Text)
+                            disabled={true}
+                            testID="WasteCardItem-Subtitle"
+                          >
+                            <StyledNativeComponent
+                              disabled={true}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "displayName": "Styled(Text)",
+                                  "inlineStyle": InlineStyle {
+                                    "rules": Array [
+                                      "
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: ",
+                                      [Function],
+                                      ";
+",
+                                    ],
+                                  },
+                                  "propTypes": Object {
+                                    "accessible": [Function],
+                                    "adjustsFontSizeToFit": [Function],
+                                    "allowFontScaling": [Function],
+                                    "dataDetectorType": [Function],
+                                    "disabled": [Function],
+                                    "ellipsizeMode": [Function],
+                                    "maxFontSizeMultiplier": [Function],
+                                    "minimumFontScale": [Function],
+                                    "nativeID": [Function],
+                                    "numberOfLines": [Function],
+                                    "onLayout": [Function],
+                                    "onLongPress": [Function],
+                                    "onPress": [Function],
+                                    "pressRetentionOffset": [Function],
+                                    "selectable": [Function],
+                                    "selectionColor": [Function],
+                                    "style": [Function],
+                                    "suppressHighlighting": [Function],
+                                    "testID": [Function],
+                                    "textBreakStrategy": [Function],
+                                  },
+                                  "render": [Function],
+                                  "styledComponentId": "StyledNativeComponent",
+                                  "target": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              testID="WasteCardItem-Subtitle"
+                            >
+                              <Text
+                                disabled={true}
+                                style={
+                                  Array [
+                                    Object {
+                                      "color": "#9DADB8",
+                                      "fontSize": 14,
+                                      "fontStyle": "normal",
+                                      "fontWeight": "normal",
+                                      "lineHeight": 19,
+                                    },
+                                  ]
+                                }
+                                testID="WasteCardItem-Subtitle"
+                              >
+                                <Text
+                                  disabled={true}
+                                  style={
+                                    Array [
+                                      Object {
+                                        "color": "#9DADB8",
+                                        "fontSize": 14,
+                                        "fontStyle": "normal",
+                                        "fontWeight": "normal",
+                                        "lineHeight": 19,
+                                      },
+                                    ]
+                                  }
+                                  testID="WasteCardItem-Subtitle"
+                                >
+                                   
+                                  Subtitle testing
+                                </Text>
+                              </Text>
+                            </StyledNativeComponent>
+                          </Styled(Text)>
+                        </View>
+                      </View>
+                    </StyledNativeComponent>
+                  </Styled(View)>
+                </View>
+              </View>
+            </StyledNativeComponent>
+          </Styled(View)>
+          <Styled(View)>
+            <StyledNativeComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "displayName": "Styled(View)",
+                  "inlineStyle": InlineStyle {
+                    "rules": Array [
+                      "
+  flex: 1;
+  justify-content: center;
+  align-items: flex-end;
+",
+                    ],
+                  },
+                  "render": [Function],
+                  "styledComponentId": "StyledNativeComponent",
+                  "target": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "flex-end",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "justifyContent": "center",
+                    },
+                  ]
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "alignItems": "flex-end",
+                        "flexBasis": 0,
+                        "flexGrow": 1,
+                        "flexShrink": 1,
+                        "justifyContent": "center",
+                      },
+                    ]
+                  }
+                >
+                  <Styled(View)>
+                    <StyledNativeComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "displayName": "Styled(View)",
+                          "inlineStyle": InlineStyle {
+                            "rules": Array [
+                              "
+  flex-direction: row;
+  align-items: center;
+",
+                            ],
+                          },
+                          "render": [Function],
+                          "styledComponentId": "StyledNativeComponent",
+                          "target": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <View
+                        style={
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                            },
+                          ]
+                        }
+                      >
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "alignItems": "center",
+                                "flexDirection": "row",
+                              },
+                            ]
+                          }
+                        >
+                          <Icon
+                            fill="#9DADB8"
+                            height={18}
+                            name="refundable"
+                            width={18}
+                          >
+                            <SvgIcon
+                              fill="#9DADB8"
+                              fillRule="evenodd"
+                              height={18}
+                              name="refundable"
+                              svgs={
+                                Object {
+                                  "SUPPLY": Object {
+                                    "height": "16px",
+                                    "svg": <G
+                                      fill="none"
+                                      height="16"
+                                      viewBox="0 0 16 16"
+                                      width="16"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <Path
+                                        d="M8.00008 0.0588379C3.62176 0.0588379 0.059021 3.62158 0.059021 7.9999C0.059021 11.3938 2.20012 14.2963 5.20234 15.4305C5.72054 15.6259 6.26476 15.7701 6.82796 15.8538C7.21046 15.9107 7.6021 15.941 8.00076 15.941C8.84522 15.941 9.65802 15.8074 10.4216 15.562C10.6937 15.4748 10.9588 15.3721 11.2182 15.2568C13.9976 14.02 15.9418 11.2329 15.9418 7.99993C15.9411 3.62161 12.379 0.0588702 8.00001 0.0588702L8.00008 0.0588379ZM11.2176 14.4039V4.10182C11.2176 3.88173 11.0397 3.70386 10.8196 3.70386C10.4582 3.70386 10.1327 3.8494 9.85071 4.13627C8.46556 5.54463 8.50563 10.3252 8.51477 10.8652L8.5211 11.2569H10.4217V14.7485C9.66516 15.0213 8.85023 15.1704 8.0009 15.1704C7.58605 15.1704 7.17965 15.1331 6.78379 15.0649L6.45614 9.24875C7.2134 9.04836 7.77239 8.3607 7.77239 7.54085L7.77169 3.9486C7.77169 3.81922 7.66763 3.71515 7.53825 3.71515C7.40887 3.71515 7.3048 3.81992 7.3048 3.9486V6.77946C7.3048 6.9243 7.18738 7.04172 7.04254 7.04172C6.8977 7.04172 6.78028 6.92429 6.78028 6.77946V3.9486C6.78028 3.80656 6.66497 3.69125 6.52294 3.69125C6.38091 3.69125 6.26559 3.80656 6.26559 3.9486V6.77946C6.26559 6.9243 6.14817 7.04172 6.00333 7.04172C5.85849 7.04172 5.74107 6.92429 5.74107 6.77946V3.9486C5.74107 3.80656 5.62576 3.69125 5.48373 3.69125C5.34169 3.69125 5.22638 3.80656 5.22638 3.9486V6.77946C5.22638 6.9243 5.10896 7.04172 4.96412 7.04172C4.81928 7.04172 4.70186 6.92429 4.70186 6.77946L4.70116 3.9486C4.70116 3.81922 4.59639 3.71515 4.46771 3.71515C4.33904 3.71515 4.23427 3.81992 4.23427 3.9486V7.53942C4.23427 8.35926 4.79326 9.04692 5.55052 9.24731L5.24818 14.6192C2.65708 13.5378 0.830437 10.9784 0.830437 8.00009C0.830437 4.04639 4.0465 0.830329 8.0002 0.830329C11.9539 0.830329 15.17 4.04639 15.17 8.00009C15.17 10.7964 13.5591 13.223 11.2177 14.4041L11.2176 14.4039Z"
+                                        fill="#9DADB8"
+                                      />
+                                    </G>,
+                                    "viewBox": "0 0 16 16",
+                                    "width": "16px",
+                                  },
+                                  "refundable": Object {
+                                    "height": "18px",
+                                    "svg": <G
+                                      fill="none"
+                                      height="18"
+                                      viewBox="0 0 16 18"
+                                      width="16"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <Path
+                                        d="M12.5998 4.09386L11.7776 5.14955C13.55 6.52783 14.4337 8.76083 14.0848 10.9752C13.8287 12.6008 12.9563 14.0293 11.6258 14.9985C10.2952 15.9663 8.66713 16.3604 7.04144 16.1031C3.68628 15.5746 1.38512 12.415 1.91245 9.05984C2.16852 7.43428 3.04217 6.00581 4.37148 5.03659C5.5326 4.19056 6.92091 3.78511 8.33688 3.86545L7.17953 5.07927L8.03938 5.89896L9.86578 3.9822V3.98345L10.6842 3.12485L9.82687 2.30641L7.91011 0.480011L7.09167 1.33861L8.34064 2.52859C6.64355 2.44825 4.98033 2.94158 3.58698 3.95707C1.96769 5.13576 0.904485 6.87553 0.593198 8.85373C-0.049493 12.9384 2.75097 16.7845 6.83565 17.4272C7.22982 17.49 7.6252 17.5201 8.01686 17.5201C9.58968 17.5201 11.1186 17.0255 12.4154 16.0816C14.0347 14.9029 15.0979 13.1631 15.4092 11.1849C15.8322 8.48864 14.7565 5.77218 12.5999 4.09411L12.5998 4.09386Z"
+                                      />
+                                      <Path
+                                        d="M8.73375 13.8434V13.0727C9.64631 12.971 10.535 12.3936 10.535 11.299C10.535 9.81157 9.15175 9.64084 8.14128 9.51657C7.49483 9.44 7.00025 9.34962 7.00025 8.95798C7.00025 8.4132 7.76721 8.35545 8.09736 8.35545C8.58689 8.35545 9.10908 8.58516 9.28733 8.87889L9.3388 8.96425L10.3543 8.49479L10.3041 8.39186C9.92626 7.61864 9.24842 7.39518 8.73504 7.30482V6.62697H7.54632V7.30231C6.44044 7.46549 5.78268 8.07932 5.78268 8.95798C5.78268 10.3902 7.08313 10.5359 8.03209 10.6425C8.87813 10.7417 9.27104 10.9513 9.27104 11.299C9.27104 11.9643 8.34968 12.0158 8.06725 12.0158C7.43838 12.0158 6.83335 11.702 6.6576 11.2853L6.61367 11.1823L5.51155 11.6493L5.55548 11.7522C5.88184 12.5167 6.58604 12.9949 7.54506 13.1092V13.8422L8.73375 13.8434Z"
+                                      />
+                                    </G>,
+                                    "viewBox": "0 0 18 18",
+                                    "width": "18px",
+                                  },
+                                  "search": Object {
+                                    "height": "20px",
+                                    "svg": <G
+                                      fill="none"
+                                      height="20"
+                                      viewBox="0 0 20 20"
+                                      width="20"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <Path
+                                        d="M11.5938 0.0625219C6.99256 0.0625219 3.2464 3.80508 3.2464 8.40636C3.2464 10.2364 3.83892 11.9276 4.84015 13.3038L0.448868 17.6987C-0.0648755 18.2124 -0.0648755 19.0412 0.448868 19.5549C0.703868 19.8099 1.03761 19.9375 1.37512 19.9375C1.71264 19.9375 2.04638 19.8099 2.30138 19.5512L6.69266 15.1599C8.06892 16.1612 9.7601 16.7537 11.5901 16.7537C16.1914 16.7537 19.9339 13.0111 19.9339 8.40622C19.9339 3.80134 16.1952 0.0623779 11.5939 0.0623779L11.5938 0.0625219ZM11.5938 14.1287C8.44 14.1287 5.87128 11.5636 5.87128 8.40612C5.87128 5.25228 8.4364 2.6874 11.5938 2.6874C14.7477 2.6874 17.3126 5.25252 17.3126 8.40612C17.3126 11.5636 14.7474 14.1287 11.5938 14.1287Z"
+                                        fill="#566475"
+                                      />
+                                    </G>,
+                                    "viewBox": "0 0 20 20",
+                                    "width": "20px",
+                                  },
+                                }
+                              }
+                              viewBox="0 0 100 100"
+                              width={18}
+                            >
+                              <Svg
+                                height="18"
+                                preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 18 18"
+                                width="18"
+                              >
+                                <RNSVGSvgView
+                                  align="xMidYMid"
+                                  bbHeight="18"
+                                  bbWidth="18"
+                                  focusable={false}
+                                  height="18"
+                                  meetOrSlice={0}
+                                  minX={0}
+                                  minY={0}
+                                  style={
+                                    Array [
+                                      Object {
+                                        "backgroundColor": "transparent",
+                                        "borderWidth": 0,
+                                      },
+                                      undefined,
+                                      Object {
+                                        "opacity": 1,
+                                      },
+                                      Object {
+                                        "flex": 0,
+                                        "height": 18,
+                                        "width": 18,
+                                      },
+                                    ]
+                                  }
+                                  vbHeight={18}
+                                  vbWidth={18}
+                                  width="18"
+                                >
+                                  <RNSVGSvgView
+                                    align="xMidYMid"
+                                    bbHeight="18"
+                                    bbWidth="18"
+                                    focusable={false}
+                                    height="18"
+                                    meetOrSlice={0}
+                                    minX={0}
+                                    minY={0}
+                                    style={
+                                      Array [
+                                        Object {
+                                          "backgroundColor": "transparent",
+                                          "borderWidth": 0,
+                                        },
+                                        undefined,
+                                        Object {
+                                          "opacity": 1,
+                                        },
+                                        Object {
+                                          "flex": 0,
+                                          "height": 18,
+                                          "width": 18,
+                                        },
+                                      ]
+                                    }
+                                    vbHeight={18}
+                                    vbWidth={18}
+                                    width="18"
+                                  >
+                                    <G>
+                                      <RNSVGGroup
+                                        fill={
+                                          Array [
+                                            0,
+                                            4278190080,
+                                          ]
+                                        }
+                                        fillOpacity={1}
+                                        fillRule={1}
+                                        font={Object {}}
+                                        matrix={
+                                          Array [
+                                            1,
+                                            0,
+                                            0,
+                                            1,
+                                            0,
+                                            0,
+                                          ]
+                                        }
+                                        opacity={1}
+                                        originX={0}
+                                        originY={0}
+                                        propList={Array []}
+                                        rotation={0}
+                                        scaleX={1}
+                                        scaleY={1}
+                                        skewX={0}
+                                        skewY={0}
+                                        stroke={null}
+                                        strokeDasharray={null}
+                                        strokeDashoffset={null}
+                                        strokeLinecap={0}
+                                        strokeLinejoin={0}
+                                        strokeMiterlimit={4}
+                                        strokeOpacity={1}
+                                        strokeWidth={1}
+                                        vectorEffect={0}
+                                        x={0}
+                                        y={0}
+                                      >
+                                        <RNSVGGroup
+                                          fill={
+                                            Array [
+                                              0,
+                                              4278190080,
+                                            ]
+                                          }
+                                          fillOpacity={1}
+                                          fillRule={1}
+                                          font={Object {}}
+                                          matrix={
+                                            Array [
+                                              1,
+                                              0,
+                                              0,
+                                              1,
+                                              0,
+                                              0,
+                                            ]
+                                          }
+                                          opacity={1}
+                                          originX={0}
+                                          originY={0}
+                                          propList={Array []}
+                                          rotation={0}
+                                          scaleX={1}
+                                          scaleY={1}
+                                          skewX={0}
+                                          skewY={0}
+                                          stroke={null}
+                                          strokeDasharray={null}
+                                          strokeDashoffset={null}
+                                          strokeLinecap={0}
+                                          strokeLinejoin={0}
+                                          strokeMiterlimit={4}
+                                          strokeOpacity={1}
+                                          strokeWidth={1}
+                                          vectorEffect={0}
+                                          x={0}
+                                          y={0}
+                                        >
+                                          <G
+                                            fill="#9DADB8"
+                                            fillRule="evenodd"
+                                            height="18"
+                                            viewBox="0 0 16 18"
+                                            width="16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <RNSVGGroup
+                                              fill={
+                                                Array [
+                                                  0,
+                                                  4288523704,
+                                                ]
+                                              }
+                                              fillOpacity={1}
+                                              fillRule={0}
+                                              font={Object {}}
+                                              matrix={
+                                                Array [
+                                                  1,
+                                                  0,
+                                                  0,
+                                                  1,
+                                                  0,
+                                                  0,
+                                                ]
+                                              }
+                                              opacity={1}
+                                              originX={0}
+                                              originY={0}
+                                              propList={
+                                                Array [
+                                                  "fill",
+                                                  "fillRule",
+                                                ]
+                                              }
+                                              rotation={0}
+                                              scaleX={1}
+                                              scaleY={1}
+                                              skewX={0}
+                                              skewY={0}
+                                              stroke={null}
+                                              strokeDasharray={null}
+                                              strokeDashoffset={null}
+                                              strokeLinecap={0}
+                                              strokeLinejoin={0}
+                                              strokeMiterlimit={4}
+                                              strokeOpacity={1}
+                                              strokeWidth={1}
+                                              vectorEffect={0}
+                                              x={0}
+                                              y={0}
+                                            >
+                                              <RNSVGGroup
+                                                fill={
+                                                  Array [
+                                                    0,
+                                                    4288523704,
+                                                  ]
+                                                }
+                                                fillOpacity={1}
+                                                fillRule={0}
+                                                font={Object {}}
+                                                matrix={
+                                                  Array [
+                                                    1,
+                                                    0,
+                                                    0,
+                                                    1,
+                                                    0,
+                                                    0,
+                                                  ]
+                                                }
+                                                opacity={1}
+                                                originX={0}
+                                                originY={0}
+                                                propList={
+                                                  Array [
+                                                    "fill",
+                                                    "fillRule",
+                                                  ]
+                                                }
+                                                rotation={0}
+                                                scaleX={1}
+                                                scaleY={1}
+                                                skewX={0}
+                                                skewY={0}
+                                                stroke={null}
+                                                strokeDasharray={null}
+                                                strokeDashoffset={null}
+                                                strokeLinecap={0}
+                                                strokeLinejoin={0}
+                                                strokeMiterlimit={4}
+                                                strokeOpacity={1}
+                                                strokeWidth={1}
+                                                vectorEffect={0}
+                                                x={0}
+                                                y={0}
+                                              >
+                                                <Path
+                                                  d="M12.5998 4.09386L11.7776 5.14955C13.55 6.52783 14.4337 8.76083 14.0848 10.9752C13.8287 12.6008 12.9563 14.0293 11.6258 14.9985C10.2952 15.9663 8.66713 16.3604 7.04144 16.1031C3.68628 15.5746 1.38512 12.415 1.91245 9.05984C2.16852 7.43428 3.04217 6.00581 4.37148 5.03659C5.5326 4.19056 6.92091 3.78511 8.33688 3.86545L7.17953 5.07927L8.03938 5.89896L9.86578 3.9822V3.98345L10.6842 3.12485L9.82687 2.30641L7.91011 0.480011L7.09167 1.33861L8.34064 2.52859C6.64355 2.44825 4.98033 2.94158 3.58698 3.95707C1.96769 5.13576 0.904485 6.87553 0.593198 8.85373C-0.049493 12.9384 2.75097 16.7845 6.83565 17.4272C7.22982 17.49 7.6252 17.5201 8.01686 17.5201C9.58968 17.5201 11.1186 17.0255 12.4154 16.0816C14.0347 14.9029 15.0979 13.1631 15.4092 11.1849C15.8322 8.48864 14.7565 5.77218 12.5999 4.09411L12.5998 4.09386Z"
+                                                >
+                                                  <RNSVGPath
+                                                    d="M12.5998 4.09386L11.7776 5.14955C13.55 6.52783 14.4337 8.76083 14.0848 10.9752C13.8287 12.6008 12.9563 14.0293 11.6258 14.9985C10.2952 15.9663 8.66713 16.3604 7.04144 16.1031C3.68628 15.5746 1.38512 12.415 1.91245 9.05984C2.16852 7.43428 3.04217 6.00581 4.37148 5.03659C5.5326 4.19056 6.92091 3.78511 8.33688 3.86545L7.17953 5.07927L8.03938 5.89896L9.86578 3.9822V3.98345L10.6842 3.12485L9.82687 2.30641L7.91011 0.480011L7.09167 1.33861L8.34064 2.52859C6.64355 2.44825 4.98033 2.94158 3.58698 3.95707C1.96769 5.13576 0.904485 6.87553 0.593198 8.85373C-0.049493 12.9384 2.75097 16.7845 6.83565 17.4272C7.22982 17.49 7.6252 17.5201 8.01686 17.5201C9.58968 17.5201 11.1186 17.0255 12.4154 16.0816C14.0347 14.9029 15.0979 13.1631 15.4092 11.1849C15.8322 8.48864 14.7565 5.77218 12.5999 4.09411L12.5998 4.09386Z"
+                                                    fill={
+                                                      Array [
+                                                        0,
+                                                        4278190080,
+                                                      ]
+                                                    }
+                                                    fillOpacity={1}
+                                                    fillRule={1}
+                                                    matrix={
+                                                      Array [
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                      ]
+                                                    }
+                                                    opacity={1}
+                                                    originX={0}
+                                                    originY={0}
+                                                    propList={Array []}
+                                                    rotation={0}
+                                                    scaleX={1}
+                                                    scaleY={1}
+                                                    skewX={0}
+                                                    skewY={0}
+                                                    stroke={null}
+                                                    strokeDasharray={null}
+                                                    strokeDashoffset={null}
+                                                    strokeLinecap={0}
+                                                    strokeLinejoin={0}
+                                                    strokeMiterlimit={4}
+                                                    strokeOpacity={1}
+                                                    strokeWidth={1}
+                                                    vectorEffect={0}
+                                                    x={0}
+                                                    y={0}
+                                                  >
+                                                    <RNSVGPath
+                                                      d="M12.5998 4.09386L11.7776 5.14955C13.55 6.52783 14.4337 8.76083 14.0848 10.9752C13.8287 12.6008 12.9563 14.0293 11.6258 14.9985C10.2952 15.9663 8.66713 16.3604 7.04144 16.1031C3.68628 15.5746 1.38512 12.415 1.91245 9.05984C2.16852 7.43428 3.04217 6.00581 4.37148 5.03659C5.5326 4.19056 6.92091 3.78511 8.33688 3.86545L7.17953 5.07927L8.03938 5.89896L9.86578 3.9822V3.98345L10.6842 3.12485L9.82687 2.30641L7.91011 0.480011L7.09167 1.33861L8.34064 2.52859C6.64355 2.44825 4.98033 2.94158 3.58698 3.95707C1.96769 5.13576 0.904485 6.87553 0.593198 8.85373C-0.049493 12.9384 2.75097 16.7845 6.83565 17.4272C7.22982 17.49 7.6252 17.5201 8.01686 17.5201C9.58968 17.5201 11.1186 17.0255 12.4154 16.0816C14.0347 14.9029 15.0979 13.1631 15.4092 11.1849C15.8322 8.48864 14.7565 5.77218 12.5999 4.09411L12.5998 4.09386Z"
+                                                      fill={
+                                                        Array [
+                                                          0,
+                                                          4278190080,
+                                                        ]
+                                                      }
+                                                      fillOpacity={1}
+                                                      fillRule={1}
+                                                      matrix={
+                                                        Array [
+                                                          1,
+                                                          0,
+                                                          0,
+                                                          1,
+                                                          0,
+                                                          0,
+                                                        ]
+                                                      }
+                                                      opacity={1}
+                                                      originX={0}
+                                                      originY={0}
+                                                      propList={Array []}
+                                                      rotation={0}
+                                                      scaleX={1}
+                                                      scaleY={1}
+                                                      skewX={0}
+                                                      skewY={0}
+                                                      stroke={null}
+                                                      strokeDasharray={null}
+                                                      strokeDashoffset={null}
+                                                      strokeLinecap={0}
+                                                      strokeLinejoin={0}
+                                                      strokeMiterlimit={4}
+                                                      strokeOpacity={1}
+                                                      strokeWidth={1}
+                                                      vectorEffect={0}
+                                                      x={0}
+                                                      y={0}
+                                                    />
+                                                  </RNSVGPath>
+                                                </Path>
+                                                <Path
+                                                  d="M8.73375 13.8434V13.0727C9.64631 12.971 10.535 12.3936 10.535 11.299C10.535 9.81157 9.15175 9.64084 8.14128 9.51657C7.49483 9.44 7.00025 9.34962 7.00025 8.95798C7.00025 8.4132 7.76721 8.35545 8.09736 8.35545C8.58689 8.35545 9.10908 8.58516 9.28733 8.87889L9.3388 8.96425L10.3543 8.49479L10.3041 8.39186C9.92626 7.61864 9.24842 7.39518 8.73504 7.30482V6.62697H7.54632V7.30231C6.44044 7.46549 5.78268 8.07932 5.78268 8.95798C5.78268 10.3902 7.08313 10.5359 8.03209 10.6425C8.87813 10.7417 9.27104 10.9513 9.27104 11.299C9.27104 11.9643 8.34968 12.0158 8.06725 12.0158C7.43838 12.0158 6.83335 11.702 6.6576 11.2853L6.61367 11.1823L5.51155 11.6493L5.55548 11.7522C5.88184 12.5167 6.58604 12.9949 7.54506 13.1092V13.8422L8.73375 13.8434Z"
+                                                >
+                                                  <RNSVGPath
+                                                    d="M8.73375 13.8434V13.0727C9.64631 12.971 10.535 12.3936 10.535 11.299C10.535 9.81157 9.15175 9.64084 8.14128 9.51657C7.49483 9.44 7.00025 9.34962 7.00025 8.95798C7.00025 8.4132 7.76721 8.35545 8.09736 8.35545C8.58689 8.35545 9.10908 8.58516 9.28733 8.87889L9.3388 8.96425L10.3543 8.49479L10.3041 8.39186C9.92626 7.61864 9.24842 7.39518 8.73504 7.30482V6.62697H7.54632V7.30231C6.44044 7.46549 5.78268 8.07932 5.78268 8.95798C5.78268 10.3902 7.08313 10.5359 8.03209 10.6425C8.87813 10.7417 9.27104 10.9513 9.27104 11.299C9.27104 11.9643 8.34968 12.0158 8.06725 12.0158C7.43838 12.0158 6.83335 11.702 6.6576 11.2853L6.61367 11.1823L5.51155 11.6493L5.55548 11.7522C5.88184 12.5167 6.58604 12.9949 7.54506 13.1092V13.8422L8.73375 13.8434Z"
+                                                    fill={
+                                                      Array [
+                                                        0,
+                                                        4278190080,
+                                                      ]
+                                                    }
+                                                    fillOpacity={1}
+                                                    fillRule={1}
+                                                    matrix={
+                                                      Array [
+                                                        1,
+                                                        0,
+                                                        0,
+                                                        1,
+                                                        0,
+                                                        0,
+                                                      ]
+                                                    }
+                                                    opacity={1}
+                                                    originX={0}
+                                                    originY={0}
+                                                    propList={Array []}
+                                                    rotation={0}
+                                                    scaleX={1}
+                                                    scaleY={1}
+                                                    skewX={0}
+                                                    skewY={0}
+                                                    stroke={null}
+                                                    strokeDasharray={null}
+                                                    strokeDashoffset={null}
+                                                    strokeLinecap={0}
+                                                    strokeLinejoin={0}
+                                                    strokeMiterlimit={4}
+                                                    strokeOpacity={1}
+                                                    strokeWidth={1}
+                                                    vectorEffect={0}
+                                                    x={0}
+                                                    y={0}
+                                                  >
+                                                    <RNSVGPath
+                                                      d="M8.73375 13.8434V13.0727C9.64631 12.971 10.535 12.3936 10.535 11.299C10.535 9.81157 9.15175 9.64084 8.14128 9.51657C7.49483 9.44 7.00025 9.34962 7.00025 8.95798C7.00025 8.4132 7.76721 8.35545 8.09736 8.35545C8.58689 8.35545 9.10908 8.58516 9.28733 8.87889L9.3388 8.96425L10.3543 8.49479L10.3041 8.39186C9.92626 7.61864 9.24842 7.39518 8.73504 7.30482V6.62697H7.54632V7.30231C6.44044 7.46549 5.78268 8.07932 5.78268 8.95798C5.78268 10.3902 7.08313 10.5359 8.03209 10.6425C8.87813 10.7417 9.27104 10.9513 9.27104 11.299C9.27104 11.9643 8.34968 12.0158 8.06725 12.0158C7.43838 12.0158 6.83335 11.702 6.6576 11.2853L6.61367 11.1823L5.51155 11.6493L5.55548 11.7522C5.88184 12.5167 6.58604 12.9949 7.54506 13.1092V13.8422L8.73375 13.8434Z"
+                                                      fill={
+                                                        Array [
+                                                          0,
+                                                          4278190080,
+                                                        ]
+                                                      }
+                                                      fillOpacity={1}
+                                                      fillRule={1}
+                                                      matrix={
+                                                        Array [
+                                                          1,
+                                                          0,
+                                                          0,
+                                                          1,
+                                                          0,
+                                                          0,
+                                                        ]
+                                                      }
+                                                      opacity={1}
+                                                      originX={0}
+                                                      originY={0}
+                                                      propList={Array []}
+                                                      rotation={0}
+                                                      scaleX={1}
+                                                      scaleY={1}
+                                                      skewX={0}
+                                                      skewY={0}
+                                                      stroke={null}
+                                                      strokeDasharray={null}
+                                                      strokeDashoffset={null}
+                                                      strokeLinecap={0}
+                                                      strokeLinejoin={0}
+                                                      strokeMiterlimit={4}
+                                                      strokeOpacity={1}
+                                                      strokeWidth={1}
+                                                      vectorEffect={0}
+                                                      x={0}
+                                                      y={0}
+                                                    />
+                                                  </RNSVGPath>
+                                                </Path>
+                                              </RNSVGGroup>
+                                            </RNSVGGroup>
+                                          </G>
+                                        </RNSVGGroup>
+                                      </RNSVGGroup>
+                                    </G>
+                                  </RNSVGSvgView>
+                                </RNSVGSvgView>
+                              </Svg>
+                            </SvgIcon>
+                          </Icon>
+                          <Styled(Text)
+                            disabled={true}
+                            testID="WasteCardItem-Cost"
+                          >
+                            <StyledNativeComponent
+                              disabled={true}
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "displayName": "Styled(Text)",
+                                  "inlineStyle": InlineStyle {
+                                    "rules": Array [
+                                      "
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: ",
+                                      [Function],
+                                      ";
+  color: ",
+                                      [Function],
+                                      ";
+",
+                                    ],
+                                  },
+                                  "propTypes": Object {
+                                    "accessible": [Function],
+                                    "adjustsFontSizeToFit": [Function],
+                                    "allowFontScaling": [Function],
+                                    "dataDetectorType": [Function],
+                                    "disabled": [Function],
+                                    "ellipsizeMode": [Function],
+                                    "maxFontSizeMultiplier": [Function],
+                                    "minimumFontScale": [Function],
+                                    "nativeID": [Function],
+                                    "numberOfLines": [Function],
+                                    "onLayout": [Function],
+                                    "onLongPress": [Function],
+                                    "onPress": [Function],
+                                    "pressRetentionOffset": [Function],
+                                    "selectable": [Function],
+                                    "selectionColor": [Function],
+                                    "style": [Function],
+                                    "suppressHighlighting": [Function],
+                                    "testID": [Function],
+                                    "textBreakStrategy": [Function],
+                                  },
+                                  "render": [Function],
+                                  "styledComponentId": "StyledNativeComponent",
+                                  "target": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              testID="WasteCardItem-Cost"
+                            >
+                              <Text
+                                disabled={true}
+                                style={
+                                  Array [
+                                    Object {
+                                      "color": "#9DADB8",
+                                      "fontSize": 16,
+                                      "fontStyle": "normal",
+                                      "fontWeight": "bold",
+                                      "lineHeight": 18,
+                                      "textDecorationLine": "line-through",
+                                    },
+                                  ]
+                                }
+                                testID="WasteCardItem-Cost"
+                              >
+                                <Text
+                                  disabled={true}
+                                  style={
+                                    Array [
+                                      Object {
+                                        "color": "#9DADB8",
+                                        "fontSize": 16,
+                                        "fontStyle": "normal",
+                                        "fontWeight": "bold",
+                                        "lineHeight": 18,
+                                        "textDecorationLine": "line-through",
+                                      },
+                                    ]
+                                  }
+                                  testID="WasteCardItem-Cost"
+                                >
+                                   
+                                  777.00
+                                </Text>
+                              </Text>
+                            </StyledNativeComponent>
+                          </Styled(Text)>
+                        </View>
+                      </View>
+                    </StyledNativeComponent>
+                  </Styled(View)>
+                </View>
+              </View>
+            </StyledNativeComponent>
+          </Styled(View)>
+        </View>
+      </View>
+    </StyledNativeComponent>
+  </Styled(View)>
+</WasteCardItem>
+`;
