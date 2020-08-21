@@ -1,28 +1,28 @@
-import { create } from 'apisauce';
-import AsyncStorage from '@react-native-community/async-storage';
-import Config from 'react-native-config';
+// import { create } from 'apisauce';
+// import AsyncStorage from '@react-native-community/async-storage';
+// import Config from 'react-native-config';
 
-const api = create({
-  baseURL: `${Config.API_BASE_URL}`,
-  timeout: 30000
-});
+// const api = create({
+//   baseURL: `${Config.API_BASE_URL}`,
+//   timeout: 30000
+// });
 
-api.addAsyncRequestTransform((request) => async () => {
-  const token = await AsyncStorage.getItem('@__:token');
+// api.addAsyncRequestTransform((request) => async () => {
+//   const token = await AsyncStorage.getItem('@__:token');
 
-  if (token) {
-    request.headers = {
-      Authorization: `Bearer ${token}`,
-      accept: 'application/json',
-      'content-type': 'application/json'
-    };
-  }
-});
+//   if (token) {
+//     request.headers = {
+//       Authorization: `Bearer ${token}`,
+//       accept: 'application/json',
+//       'content-type': 'application/json'
+//     };
+//   }
+// });
 
-api.addRequestTransform((response) => {
-  if (!response.ok) throw response;
+// api.addRequestTransform((response) => {
+//   if (!response.ok) throw response;
 
-  return false;
-});
+//   return false;
+// });
 
-export default api;
+// export default api;

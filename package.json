@@ -50,6 +50,7 @@
 		"eslint-plugin-react": "^7.17.0",
 		"eslint-plugin-react-hooks": "^1.7.0",
 		"eslint-plugin-react-native": "^3.2.1",
+		"husky": "^4.2.5",
 		"jest": "^24.9.0",
 		"jest-cucumber": "^2.0.11",
 		"jest-enzyme": "^7.1.2",
@@ -57,7 +58,8 @@
 		"metro-react-native-babel-preset": "^0.62.0",
 		"react-dom": "^16.13.1",
 		"react-test-renderer": "16.13.1",
-		"reactotron-react-native": "^4.0.2"
+		"reactotron-react-native": "^4.0.2",
+		"yarnhook": "^0.4.3"
 	},
 	"jest": {
 		"preset": "react-native",
@@ -87,5 +89,13 @@
 			"enzymeAdapter": "react16"
 		},
 		"verbose": false
+	},
+	"husky": {
+		"hooks": {
+			"post-checkout": "yarnhook",
+			"post-merge": "yarnhook",
+			"post-rewrite": "yarnhook",
+			"pre-push": "yarn lint && yarn test && bash <(curl -s https://codecov.io/bash) -t 36262ac0-fad0-4950-bfcb-4aa4a5830680"
+		}
 	}
 }
