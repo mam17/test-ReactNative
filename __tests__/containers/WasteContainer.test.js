@@ -18,7 +18,7 @@ const defaultProps = {
   }
 };
 
-describe('Testing Wastes Container', () => {
+describe('Testing Waste Container', () => {
   const component = mount(
     <StateProvider reducer={mainReducer} initialState={initialState}>
       <WasteContainer {...defaultProps} />
@@ -29,10 +29,6 @@ describe('Testing Wastes Container', () => {
     component.update();
 
     expect(component).toMatchSnapshot();
-  });
-
-  it('Should click back button', () => {
-    component.update();
   });
 
   it('Should unmount component correctly', () => {

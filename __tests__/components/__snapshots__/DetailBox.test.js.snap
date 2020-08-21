@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailBox should render correctly 1`] = `
+<Styled(View)>
+  <Styled(View)>
+    <Icon
+      height={24}
+      name="calendarChecked"
+      width={24}
+    />
+  </Styled(View)>
+  <Styled(View)>
+    <Styled(Text)>
+      Testing title
+    </Styled(Text)>
+    <Styled(Text)>
+      Testing subtitle
+    </Styled(Text)>
+  </Styled(View)>
+</Styled(View)>
+`;

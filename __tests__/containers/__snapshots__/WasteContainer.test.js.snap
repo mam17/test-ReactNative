@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Wastes Container Should render correctly with no components missing 1`] = `
+exports[`Testing Waste Container Should render correctly with no components missing 1`] = `
 <StateProvider
   initialState={
     Object {
