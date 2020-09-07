@@ -4,7 +4,7 @@ import WasteCardItem from '../../src/assets/components/WasteCardItem';
 
 describe('Testing WasteCardItem', () => {
   const defaultProps = {
-    disabled: true,
+    disabled: false,
     subtitle: 'Subtitle testing',
     title: 'Title testing',
     cost: 777
