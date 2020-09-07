@@ -4,7 +4,7 @@ exports[`Testing WasteCardItem WasteCardItem should render correctly 1`] = `
 <Styled(Component)>
   <Styled(View)>
     <Styled(Text)
-      disabled={true}
+      disabled={false}
       testID="WasteCardItem-Title"
     >
       Title testing
@@ -15,7 +15,7 @@ exports[`Testing WasteCardItem WasteCardItem should render correctly 1`] = `
         width={16}
       />
       <Styled(Text)
-        disabled={true}
+        disabled={false}
         testID="WasteCardItem-Subtitle"
       >
          
@@ -26,13 +26,13 @@ exports[`Testing WasteCardItem WasteCardItem should render correctly 1`] = `
   <Styled(View)>
     <Styled(View)>
       <Icon
-        fill="#9DADB8"
+        fill="#09D261"
         height={18}
         name="refundable"
         width={18}
       />
       <Styled(Text)
-        disabled={true}
+        disabled={false}
         testID="WasteCardItem-Cost"
       >
          
